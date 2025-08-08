@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/test_wf_01.css">
+   <link rel="stylesheet" href="./css/test_login.css">
+   <link rel="icon" href="./img/linkedin_social media_icon.png">
+   <title>와이어프레임 연습</title>
+   <style>
+   </style>
+</head>
+<body>
+   <!-- 헤더 시작 -->
+   <header>     
+      <div id="main_img">
+         <img src="./img/paik_flogo.png" alt="">
+      </div>
+      <div id="link_block">
+         <ul id="links">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Sitemap">Sitemap</a></li>
+            <li><a href="#Link">Link</a></li>
+            <li><a href="#AboutUs">AboutUs</a></li>
+         </ul>
+      </div>
+   </header>
+   <!-- 헤더 끝 -->
+
+   <!-- 네비게이션 시작 -->
+   <nav id="nav_list">
+      <ul>
+         <li><a href=#회사소개">회사소개</a></li>
+         <li><a href=#제품안내">제품안내</a></li>
+         <li><a href=#정보광장">정보광장</a></li>
+         <li><a href=#커뮤니티">커뮤니티</a></li>
+         <li><a href=#관련링크">관련링크</a></li>
+      </ul>
+   </nav>
+   <!-- 네비게이션 끝 -->
+   
+   <!-- 섹션 시작 -->
+   <section>
+      <article class="at1">
+         <!-- <p>로그인</p> -->
+         <table class="login">
+            <tr class="login">
+               <td class="login"><input type="text" placeholder="ID를 입력하세요"></td>
+            </tr>
+            <tr class="login">
+               <td class="login"><input type="password" placeholder="비밀번호를 입력하세요"></td>
+            </tr>
+         </table>
+         <input id="login" type="submit" value="로그인">
+         <input id="subscribe" type="submit" value="회원가입">
+
+         <div class="simple_box">
+            <div class="simple_login">
+               <p>간편 로그인</p>
+               <hr>
+               <div>
+                  <a href="#카카오"><img src="./img/kakao_message_social_logo_icon.png" alt=""></a>
+                  <a href="#네이버"><img src="./img/naver_icon.png" alt=""></a>
+                  <a href="#애플"><img src="./img/apple_icon.png" alt=""></a>
+                  <a href="#페이스북"><img src="./img/facebook_logo_media_popular_icon.png" alt=""></a>
+                  <a href="#라인"><img src="./img/line_media_social_icon.png" alt=""></a>
+               </div>
+            </div>
+         </div>
+      </article>
+
+      <article class="at2">
+         <div class="at2_sub1">
+            <!-- <p>정보</p> -->
+            <iframe src="info1.html" width="100%" height="100%" style="border:none;"></iframe>
+         </div>
+         <div class="at2_sub2">
+            <!-- <p>정보</p> -->
+            <iframe src="info2.html" width="100%" height="100%" style="border:none;"></iframe>
+         </div>
+      </article">
+   </section>
+   <!-- 섹션 시작 -->
+   
+   <!-- footer 시작 -->
+   <footer>
+      <div class="foot_text">
+         <!-- <hr color="darklime">            -->
+         <img src="./img/paik_flogo.png" width="200px" alt="풋터로고">    
+      
+         <div class="info_text">
+            <h5>개인정보처리방침</h5>
+            (주)더본코리아  |  사업자등록번호 211-86-00870  |  대표이사 백종원 <br>
+            주소: 서울시 강남구 봉은사로 1길 39 유성빌딩 5~6층  |  팩스: 02-511-3864<br>
+            본사 대표전화: 02-549-3864  |  가맹상담전화: 02-3447-0410  |  고객센터: 1544-2360 <br>
+            <h5>COPYRIGHTⓒ 2018 THEBORN KOREA INC. ALL RIGHTS RESERVED</h5>
+         </div>        
+      </div>
+      <div class="sns_block">
+         <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+            centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+            <swiper-slide><img src="./img/img1.JPG" alt=""><p>Introduction</p></swiper-slide>
+            <swiper-slide><img src="./img/img2.JPG" alt=""><p>Co-Work</p></swiper-slide>
+            <swiper-slide><img src="./img/img3.JPG" alt=""><p>Local Area</p></swiper-slide>
+            <swiper-slide><img src="./img/img4.JPG" alt=""><p>Logistics</p></swiper-slide>
+            <swiper-slide><img src="./img/img5.JPG" alt=""><p>Export</p></swiper-slide>
+            <swiper-slide><img src="./img/img6.JPG" alt=""><p>Construction</p></swiper-slide>
+            <swiper-slide><img src="./img/img7.JPG" alt=""><p>Networking</p></swiper-slide>
+         </swiper-container>
+      </div>
+   </footer>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>
+</html>

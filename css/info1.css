@@ -1,0 +1,57 @@
+
+.upper_box{
+   width:100%;
+   /* height:500px; */
+   margin:0;
+   /* border:1px solid black; */
+}
+
+.product{
+   margin-top:10px;
+}
+
+table.product, table.product td, table.product th{
+   border: 1px solid rgb(218, 214, 214);
+   border-collapse: collapse;
+}
+.overlay{
+   color:#643316;
+}
+.item{
+   width:200px; height:100%;
+   border-radius: 10px;
+   box-shadow: 5px 5px 10px gainsboro;
+   overflow: hidden;
+   cursor: pointer;
+   position:relative;         
+}
+.item:hover{
+   background-color: rgba(187, 207, 160, 0.3);
+   transition: background-color 0.5s ease, transform 0.8s ease;
+}
+.item img{
+   width: 100%; height: 100%;
+   /* transition:  1s ease; */ /* hover에서 처리하면 영역 벗어날 경우 빨리 원상 복구됨*/
+}
+.overlay{
+   position: absolute;
+   top:100px; left:0px;
+   width:100%; height: 100%;
+   opacity: 0;
+   transform:translateY(100%); /* Y축을 2배 확장함 */
+   /* transition:  1s ease; */ /* hover에서 처리하면 영역 벗어날 경우 빨리 원상 복구됨*/
+   text-align: center;
+   font-size: 0.9em;
+}
+.item:hover .overlay{
+   opacity: 1;
+}
+/* 애니메이션 효과 */
+.item:hover img{
+   transform: translateY(70px);
+   transition:  0.3s ease; /* hover에서 옮겨옴*/
+}
+.item:hover .overlay{
+   transform: translateY(-60px);
+   transition:  0.3s ease; /* hover에서 옮겨옴*/
+}

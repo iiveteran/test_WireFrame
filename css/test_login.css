@@ -1,0 +1,81 @@
+   input {
+      border: none;
+      outline: none;
+      width: 100%;
+      height:50px;
+      padding: 0 10px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      font-size: 20px;
+      cursor:pointer;
+   }
+
+   table.login {
+      border-spacing: 0;
+      border: 1px solid darkgray;
+      border-radius: 20px;
+      overflow: hidden;
+      width: 300px;
+   }
+
+   td.login {
+      padding: 4px 10px;
+      border-bottom: 1px solid darkgray; /* 중간 줄 */
+   }
+
+   /* 마지막 td에는 중간선 제거 */
+   tr.login:last-child td {
+      border-bottom: none;
+   }
+   table{
+      position:absolute;
+      top:50px;
+      left:100px;;
+   }
+   input#login,input#subscribe {
+      width: 120px;      
+      height: 40px;
+      border-radius: 10px;
+      color:rgb(75, 73, 73);
+      background-color: rgb(172, 230, 172);
+      font-size: 20px;  /* 글씨 크기 */
+      cursor: pointer;  /* 마우스 커서 변경 */
+      transition: transform 0.5s ease;
+   }
+   input#login{
+      position:absolute;
+      top:280px;
+      left: 115px;
+   }
+   input#subscribe{
+      position:absolute;
+      top:280px;
+      left: 260px;
+   }
+   #login:hover{
+      transform: scale(1.1);
+      color:rgba(0, 0, 0, 0.85);
+      background-color: rgb(172, 230, 172, 0.85);
+   }
+   #subscribe:hover{
+      transform: scale(1.1);
+      color:rgba(0, 0, 0, 0.85);
+      background-color: rgb(172, 230, 172, 0.85);
+   }
+
+   .simple_box{
+      position:absolute;
+      top:350px;
+      left:60px;
+   }
+   .simple_login p{
+      font-size: 30px;
+   }
+   .simple_login img:hover{
+      transform: scale(1.2);
+
+   }
+
+   .simple_login img{
+      transition: transform 0.5s ease;
+   }
