@@ -8,6 +8,10 @@
       box-sizing: border-box;
       font-size: 20px;
       cursor:pointer;
+      background-color:rgb(253, 253, 143);
+   }
+   input:hover{
+      background-color: white;;
    }
 
    table.login {
@@ -65,7 +69,7 @@
 
    .simple_box{
       position:absolute;
-      top:350px;
+      top:380px;
       left:60px;
    }
    .simple_login p{
